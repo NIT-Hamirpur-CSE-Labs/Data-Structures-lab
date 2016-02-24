@@ -13,7 +13,7 @@ int state[MAX];
 
 //now some functions which'll be used in the program
 int queue[MAX], front = -1,rear = -1;
-int count,max_edge,origin,destin;
+//int count,max_edge,origin,destin;
 void traversal();
 void bfs();
 void insert_queue();
@@ -28,16 +28,14 @@ int main()
     return 0;
 }
 
+//used for traversal
 void traversal()
 {
 	int v;
-	if (origin==0 && destin ==0)
-	{
-		exit;
-	}
+	
 
-	else
-	{
+	
+	
 	for (v = 0; v < n; v++)
 	{
 		state[v]=initial;
@@ -45,9 +43,10 @@ void traversal()
 	printf("Enter start vertex\n");
 	scanf("%d",&v);
 	bfs(v);
-}
+
 }
 
+//applying bfs here
 void bfs(int v)
 {
 	  int i;
@@ -73,6 +72,7 @@ void bfs(int v)
     printf("\n");
 }
 
+//if queue is empty
 int isEmpty_queue()
 {
     if(front == -1 || front > rear)
@@ -81,6 +81,7 @@ int isEmpty_queue()
         return 0;
 }
 
+//insertion in queue
 void insert_queue(int vertex)
 {
     if(rear == MAX-1)
@@ -94,6 +95,7 @@ void insert_queue(int vertex)
     }
 }
 
+//deletion from queue
 int delete_queue()
 {
     int delete_item;
@@ -108,9 +110,10 @@ int delete_queue()
     return delete_item;
 }
 
+//creating a graph
 void create_graph()
 {
-//    int count,max_edge,origin,destin;
+    int count,max_edge,origin,destin;
 
     printf("Enter number of vertices : ");
     scanf("%d",&n);
