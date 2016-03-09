@@ -1,3 +1,4 @@
+//BFS algo
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -32,9 +33,6 @@ int main()
 void traversal()
 {
 	int v;
-	
-
-	
 	
 	for (v = 0; v < n; v++)
 	{

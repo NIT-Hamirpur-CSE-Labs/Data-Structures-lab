@@ -1,15 +1,4 @@
-/* ==========  ========== ========== ========= */
-//         Breadth First Search (BFS)          //
-//               Algorithm in C                //
-//                                             //
-//         Functions follow Pascal Case        //
-//           Convention and Variables          //
-//         follow Camel Case Convention        //
-//                                             //
-//            Author - Vamsi Sangam            //
-//            Theory of Programming            //
-/* ========== ========== ========== ========== */
-  
+
 #include <stdio.h>
 #include <stdlib.h>
   
