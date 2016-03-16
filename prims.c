@@ -54,7 +54,7 @@ int main()
     		distance[a][b]=distance[b][a]=999;
     	}
 
-}
+        }
     	}
     }
 
